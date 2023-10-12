@@ -1,0 +1,132 @@
+@import "nav.css";
+@import "bbanner.css";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&family=Montserrat:wght@100;300;400;500&display=swap');
+
+@media (min-width:320px) {
+    body {
+  
+        background-color: white;
+      
+        color:black;
+        text-align: justify;
+      }
+      h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        color: rgb(255,173,182);
+        font-weight: 500;
+        padding: 2% 5% 10px;
+        text-align: center;
+    }
+
+    img {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+
+      p{  
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1 rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: 200;
+        line-height: 1.3;
+        grid-column-start: 1;
+        margin: 0 5% 0;
+    
+    }
+}
+@media (min-width:600px){
+    body {
+  
+        background-color: white;
+      
+        color:black;
+        text-align: justify;
+      }
+      h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.3rem;
+        color: rgb(255,173,182);
+        font-weight: 500;
+        padding: 2% 5% 10px;
+        text-align: center;
+    }
+
+    img {
+        width: 80%;
+        padding-left: 10%;
+    padding-right: 0;
+      }
+
+      p{  
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1 rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: 200;
+        line-height: 1.3;
+        grid-column-start: 1;
+        margin: 0 5% 0;
+    
+    }
+}
+
+@media (min-width:1025px) {
+body {
+  
+  background-color: white;
+
+  color:black;
+  text-align: justify;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3rem;
+    color: rgb(255,173,182);
+    font-weight: 500;
+    padding-top: 50px;
+    text-align: left;
+}
+
+p{  
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 200;
+    line-height: 1.3;
+    grid-column-start: 1;
+
+}
+
+.type1{
+    grid-column-end: 1;
+}
+
+.type2{
+    grid-column-start: span 2;  
+}
+
+#greeting{
+
+    margin: auto;
+    display: grid;
+    background-color: white;
+    column-gap:5px;
+    grid-template-columns: 1.5fr 1fr;
+    max-width: 1120px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column-start: 2;
+    grid-row: 2/8  ; 
+    padding-left: 0%;
+    
+  }
+}

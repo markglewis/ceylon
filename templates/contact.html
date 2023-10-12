@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <title>Celebrate Ceylon</title>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <img src="..\src\whiteLogo.png" alt="logo">
+        <a href="..\index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="designs.html">Designs</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    <h1>Please fill in the following information and we will reach out to you via the email you have provided with the
+        next steps </h1>
+    <br>
+
+    
+    
+    <form name="contact" method="POST" netlify data-netlify-recaptcha="true" netlify-honeypot="bot-field" action="success.html">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" required>
+        <label style="display: none;">
+            Enter your creation date: <input name="bot-field" />
+          </label>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" required>
+        
+        <label for="gender">Select Gender</label>
+        <select name="gender" id="gender">
+            <option value="">Select</option>
+            <option value="male">Female</option>
+            <option value="female">Male</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" required>
+        <label for="typejewllery">What type of jewellery are you looking for:</label>
+        <select name="typejewllery" id="typejewllery">
+            <option value="">Select</option>
+            <option value="">Engagement Ring</option>
+            <option value="Ring">Ring</option>
+            <option value="Bangle">Bangle</option>
+            <option value="Chain">Chain</option>
+            <option value="Earring">Earring </option>
+
+        </select>
+        <label for="typestone">What type of Gemstones would you like</label>
+        <select name="typestone" id="typestone">
+            <option value="">Select</option>
+            <option value="Diamond">Diamond</option>
+            <option value="Sapphire">Sapphire</option>
+            <option value="Ruby">Ruby </option>
+            <option value="Topaz">Topaz</option>
+            <option value="Amethyst">Amethyst </option>
+            <option value="Aquamarine">Aquamarine</option>
+            <option value="Emerald">Emerald </option>
+            <option value="Multiple">Multiple</option>
+        </select>
+
+
+        <!--Please upload inspirational photos of a particular piece you like-->
+        <label for="imglink">Please enter links for photo inspiration</label>
+        <input type="text" id="imglink" name="imglink">
+        <label for="photoupload">Upload a picture of a piece you like</label>
+
+        <input type="file" id="photoupload" name="photoupload" accept="image/*" hidden>
+        <label id="rpluploadbtn" for="photoupload">Choose File <p id="file-chosen">No File Chosen</p></label>
+        
+        <label for="material">What material would you like?</label>
+        <select name="material" id="material" required>
+            <option value="">Select</option>
+            <option value="">Yellow gold</option>
+            <option value="">Rose Gold</option>
+            <option value="">White Gold</option>
+            <option value="">Platinum </option>
+        </select>
+        <label for="budget">What is your budget? (Minimum Order Value 1000$)</label>
+        <input id="budget" name="budget" type="number" step="10" value="1000" min="1000"/>
+        <label for="commentsnquestions">Enter any comments and questions you have</label>
+
+        <textarea id="commentsnquestions" name="commentsnquestions" rows="4" >
+        </textarea>
+        <div data-netlify-recaptcha="true"></div>
+        <input type="submit" value="Submit">
+    </form>
+    
+<script>
+    const uploadField = document.getElementById("photoupload");
+
+    uploadField.onchange = function() {
+        <!--3MB-->
+    if(this.files[0].size > 3145728){
+       alert("File is too big!");
+       this.value = "";
+    }
+}
+</script>
+<script>
+    const actualBtn = document.getElementById('photoupload');
+
+    const fileChosen = document.getElementById('file-chosen');
+
+    actualBtn.addEventListener('change', function(){
+  fileChosen.textContent = this.files[0].name
+})
+</script>
+</body>
+
+
+
+</html>
