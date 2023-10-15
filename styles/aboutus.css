@@ -27,7 +27,7 @@
 
       p{  
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 1 rem;
+        font-size: calc(12px + 1vw);
         padding-top: 15px;
         padding-bottom: 15px;
         font-weight: 200;
@@ -57,12 +57,12 @@
     img {
         width: 80%;
         padding-left: 10%;
-    padding-right: 0;
+        padding-right: 0;
       }
 
       p{  
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 1 rem;
+        font-size: calc(12px + 1vw);
         padding-top: 15px;
         padding-bottom: 15px;
         font-weight: 200;
@@ -84,7 +84,7 @@ body {
 
 h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.3rem;
+    font-size: 2.3vw;
     color: rgb(255,173,182);
     font-weight: 500;
     padding-top: 50px;
@@ -93,7 +93,7 @@ h1{
 
 p{  
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.25rem;
+    font-size: calc(12px + 1vw);
     padding-top: 15px;
     padding-bottom: 15px;
     font-weight: 200;
@@ -112,12 +112,13 @@ p{
 
 #greeting{
 
-    margin: auto;
+    
     display: grid;
     background-color: white;
     column-gap:5px;
     grid-template-columns: 1.5fr 1fr;
-    max-width: 1120px;
+    max-width: 80%;
+    margin: 0 10% 0;
 }
 
 img {

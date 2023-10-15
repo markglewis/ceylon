@@ -41,8 +41,34 @@ pink rgb(255,173,182)
         margin-right: 30%;
     }
 
+    #gsbanner{
+
+    font-size: 2vw;
+    background-color: rgb(255, 173, 182);
+    margin: 0 0 0;
+    }
+
     h1{
-        font-size: calc(12px + 2vw);;
+        font-size: calc(12px + 1.5vw);
+    }
+    .a{
+        font-size: calc(10px + 1vw);
+    }
+
+    h3, li{
+    font-size: calc(12px + 1vw);
+    }
+
+
+
+    .infoflex,.warrantycontent p,.testimonials p,h3,li,pre{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .faq dl{
+        margin-left: 15%;
+        margin-right: 15%;
     }
 
     .testimonials video {
@@ -50,22 +76,60 @@ pink rgb(255,173,182)
         width: 80%;
     }
 
+    .infoheader{
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: rgb(51, 50, 50);
+
+        margin-top: 1%;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        text-align: center;
+        color: white;
+    }
+
+    #frontpic{
+        width: 100%;
+    }
+
     #homenbar{
 
     font-size: 3vw;
+    padding-left: min(20px, 20%);
+    padding-right: min(20px, 20%);
     }
 
-    .infoflex img {
-        min-width: 100px;
-        min-height: 56px;
-        max-width: 100px;
+    .infoflex{
+
+    margin-left: 5%;
+    margin-right: 5%;
     }
 
+    .infoflex img, .cimage {
+        min-width: 300px;
+        min-height: 168px;
+        max-width: 300px;
+    }
+
+    .testicollapse,
+    .faqcollapse,
+    .warrantycollapse {
+        margin-left: 5%;
+    }
+
+    .infoflex{
+        display: none;
+    }
     
 }
 @media (min-width:600px){
     .infoflex{
-        justify-content: space-between
+        justify-content: space-between;
+        display:grid;
+    }
+
+    .slideshow-container{
+        display: none;
     }
 
     .infoflex img {
@@ -77,14 +141,39 @@ pink rgb(255,173,182)
 }
 
 @media (min-width:961px) {
+    #frontpic,.infoheader, #gsbanner, .alau, .infoflex{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .warrantycontent p,.testimonials p,pre{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    #frontpic{
+        width: 80%;
+    }
     #bnnrlogo {
         padding-top: 20px;
         max-width: 20%;
         margin-left: 40%;
         margin-right: 40%;
+        padding-bottom: 1.5%;
     }
     #homenbar{
-        font-size: x-large;
+        padding-left: 20%;
+        padding-right: 20%;
+        font-size: 2vw;
+    }
+    #gsbanner{
+
+    font-size: 1.25vw;
+    background-color: rgb(255, 173, 182);
+    }
+
+    .infoheader{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .infoflex{
@@ -99,7 +188,7 @@ pink rgb(255,173,182)
 
     h1{
 
-    font-size: calc(12px + 3vw);
+    font-size: calc(12px + 2vw);
     }
     
     .infoflex{
@@ -116,6 +205,12 @@ pink rgb(255,173,182)
         margin: 5px 40% 5px;
         width: 20%;
     }
+
+    .testicollapse,
+    .faqcollapse,
+    .warrantycollapse {
+        margin-left: 10%;
+    }
 }
 
 @media (min-width:1500){
@@ -127,10 +222,44 @@ pink rgb(255,173,182)
 }
 
 @media (min-width:2000px){
+
+
+    #frontpic,.infoheader, #gsbanner, .alau, .infoflex,h3,li{
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 2vw;
+    }
+
+    #bnnrlogo {
+        padding-top: 20px;
+        max-width: 12%;
+        margin-left: 44%;
+        margin-right: 44%;
+        padding-bottom: 1.5%;
+    }
+
+    #homenbar{
+        padding-bottom: 1%;
+        font-size: 1.5vw;
+    }
+
+    #gsbanner{
+        font-size: 1vw;
+    }
+
+    #frontpic{
+        width: 60%;
+    }
+    .warrantycontent p,.testimonials p, .testicollapse,.faqcollapse,.warrantycollapse,pre{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+
     .infoflex img {
-        min-width: 500px;
-        min-height: 286px;
-        max-width: 500x;
+        min-width: 400px;
+        min-height: 229px;
+        max-width: 400x;
     }
 }
 
@@ -147,8 +276,7 @@ pink rgb(255,173,182)
     
     z-index: 100;
 
-    padding-left: min(20px, 20%);
-    padding-right: min(20px, 20%);
+    
 
 }
 
@@ -185,7 +313,7 @@ body {
 }
 
 #gsbanner {
-    background-color: rgb(255, 173, 182);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,10 +321,6 @@ body {
     color: black;
     font-weight: 400;
 
-}
-
-#frontpic {
-    width: 100%;
 }
 
 #picname {
@@ -209,7 +333,6 @@ h1,
 a,
 h3 {
     font: bold;
-    margin: auto;
 }
 
 
@@ -225,7 +348,6 @@ h3 {
     padding-top: 1rem;
     padding-bottom: 1rem;
     border: none;
-    margin-left: 5%;
 }
 
 .testicollapse{
@@ -244,6 +366,7 @@ h1 {
     font-weight: 500;
     padding-top: 10px;
     padding-bottom: 10px;
+    line-height: initial;
     border-top-right-radius: 5% 85%;
     border-top-left-radius: 5% 85%;
 }
@@ -252,9 +375,9 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     color: black;
     font-weight: 400;
-    font-size: calc(12px + 1vw);
-    margin:2% 5%;
     text-align: justify;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 .alau{
@@ -265,30 +388,15 @@ li{
     font-family: 'Montserrat', sans-serif;
     color: black;
     font-weight: 400;
-    font-size: calc(12px + 1vw);
-    margin:0 5%;
 }
 
 
-.infoheader {
-    background-color: rgb(51, 50, 50);
-    margin-top: 30px;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: center;
-    color: white;
-}
 .infoflex {
     font-family: 'Josefin Sans', sans-serif;
     color: white;
-    display: grid;
     grid-auto-flow: column;
-    margin-left: 5%;
-    margin-right: 5%;
-    overflow-x: auto;
-    
+    overflow-x: scroll;
 }
-
 
 
 
@@ -300,33 +408,46 @@ li{
     padding-bottom: 5px;
 }
 
-.faq .question,
+.faq .question,.Q,.A,
 .answer {
-    margin: 8px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: calc(12px + 1.2vw);
-    padding-left: 10%;
-    padding-right: 10%;
     color: black;
 }
 
-.answer {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: black;
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+    padding: 0;
+}
+  
+dt {
+    grid-column-start: 1;
+}
+  
+dd {
+    grid-column-start: 2;
 }
 
-.testimonials p {
+.Q, .question{
+    margin-bottom: .5%;
+}
+.A, .answer{
+    margin-bottom: 2.5%;
+}
+
+.question,.answer{
+    padding-left: 20px;
+}
+
+.testimonials p, pre {
     padding-top: 5px;
     padding-bottom: 5px;
-    margin: 8px;
     font-family: 'Montserrat', sans-serif;
 
     font-weight: 300;
     font-size: calc(12px + 1.2vw);
-    padding-left: 10%;
-    padding-right: 10%;
     color: black;
 }
 
@@ -335,13 +456,10 @@ li{
 .warrantycontent p{
     padding-top: 5px;
     padding-bottom: 5px;
-    margin: 8px;
     font-family: 'Montserrat', sans-serif;
 
     font-weight: 300;
     font-size: calc(12px + 1.2vw);
-    padding-left: 10%;
-    padding-right: 10%;
     color: black;
 }
 
@@ -378,3 +496,104 @@ a:hover {
 a:active {
     text-decoration: none;
 }
+
+ul{
+    list-style-type: circle;
+    margin: 3%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Make the images invisible by default */
+  .Containers, .Containers2 {
+    display: none;
+    text-align: center;
+  }
+
+  
+  /* forward & Back buttons */
+  .Back, .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+  }
+  
+  /* Place the "forward button" to the right */
+  .forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  /*when the user hovers,add a black background with some little opacity */
+  .Back:hover, .forward:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption Info */
+  .Info {
+    color: #e3e3e3;
+    font-size: 16px;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Worknumbering (1/3 etc) */
+  .MessageInfo {
+    color: white;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The circles or bullets and indicators */
+  .dots, .dots2 {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: rgb(51, 50, 50);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+  }
+  
+  .enable, .dots:hover, .dots:hover {
+    background-color: rgb(255,173,182);
+  }
+  
+  /* Faint animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+
