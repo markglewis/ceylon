@@ -1,0 +1,108 @@
+@import "nav2.css";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&family=Montserrat:wght@100;300;400;500&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin-bottom: 4%;
+}
+
+body *{
+    max-width:2500px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+@media (min-width:320px)  {
+    body *{
+        width: 95%;
+    }
+
+    #lmain{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4vw;
+        color: rgb(255,173,182);
+        font-weight: 500;
+        text-align: left;
+        margin: 0 0 2%;
+    }
+    p{  
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: calc(12px + 1vw);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: 200;
+        line-height: 1.3;
+        grid-column-start: 1;
+    
+    }
+    img{
+        width: 100%;
+    }
+
+}
+@media (min-width:600px){
+
+    body *{
+        width: 90%;
+    }
+
+    #lmain{
+        margin-top: 0.6vw;
+        margin-bottom: 2vw;
+    }
+
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.3vw;
+        color: rgb(255,173,182);
+        font-weight: 500;
+        text-align: left;
+    }
+    
+    p{  
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: calc(12px + 1vw);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: 200;
+        line-height: 1.3;
+        grid-column-start: 1;
+    
+    }
+    
+    .type1{
+        grid-column-end: 1;
+    }
+    
+    .type2{
+        grid-column-start: span 2;  
+    }
+    
+    #greeting{
+        display: grid;
+        background-color: white;
+        column-gap:5px;
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    #greeting *{
+        width: 100%;
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-column-start: 2;
+        grid-row: 2/8  ; 
+    }
+}

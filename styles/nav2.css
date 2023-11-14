@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&family=Montserrat:wght@100;300;400;500&display=swap');
+
+/*
+light regular bold
+https://fonts.google.com/specimen/Open+Sans
+*/
+
+/*
+
+greyish rgb(136,136,128)
+grey rgb(88,89,91)
+greyer rgb(109,110,112)
+dark grey rgb(51,50,50)
+white rgb(255,255,255)
+pink rgb(255,173,182)
+    
+@media (width < 600px) {}
+@media (width < 960px) and (width >= 600px) {}
+@media (width >=960px) {}
+*/
+
+@media (min-width:320px)  {
+    #navbar {
+        margin: 0 auto;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        
+        background-color: white;
+        position: sticky;
+        top: 0;
+        padding-top:5px;
+        z-index: 100;
+        display:flex;
+
+        font-size: clamp(12px, 1.6vw, 40px);
+    }
+
+
+
+    #navbar img {
+        float: left;
+        object-fit: cover;
+        max-width: 15vw;
+        height: auto;
+    }
+
+    #nlinks{
+        height: 2em;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color:rgb(255,173,182);
+
+
+        margin-top: 5.45%;
+        margin-left: 3%;
+        width: 82%;
+    }
+
+    #navbar a {
+        color: white;
+        padding: 0 10px 0;
+        text-align: center;
+    }
+
+
+    #navbar a:link {
+        text-decoration: none;
+    }
+
+    #navbar a:visited {
+        text-decoration: none;
+    }
+
+    #navbar a:active {
+        text-decoration: none;
+    }
+}

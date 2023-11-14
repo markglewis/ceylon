@@ -1,0 +1,68 @@
+@import "nav2.css";
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin-bottom: 4%;
+}
+
+body *{
+    max-width:2500px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width:320px)  {
+    body *{
+        width: 95%;
+    }
+
+    #lmain{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #pane{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #showcase{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media (min-width:600px)  {
+    body *{
+        width: 90%;
+    }
+
+    #lmain{
+        margin-top: 0.6vw;
+        margin-bottom: 2vw;
+    }
+
+    #showcase img{
+        width: 100%;
+    }
+    #showcase{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+
+    .landscape{
+        grid-column: 1/3;
+    }
+}
