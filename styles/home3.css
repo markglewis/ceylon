@@ -124,9 +124,7 @@ body *{
     font-size: clamp(14px,1.5vw,40px);
 }
 
-button{
-    font-size: clamp(14px,1.6vw,40px);
-}
+
 
 .infoflex {
     grid-auto-flow: column;
@@ -158,6 +156,9 @@ button{
     cursor: pointer;
     overflow: hidden;
     outline: none;
+
+    font-size: clamp(14px,1.6vw,40px);
+    color: black;
 }
 
 
